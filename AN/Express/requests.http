@@ -1,0 +1,26 @@
+@baseurl = http://localhost:3000
+
+# Get all friends
+GET {{baseurl}}/friends
+
+###
+
+# Get a friend by id
+GET {{baseurl}}/friends/4
+
+###
+POST {{baseurl}}/friends
+Content-Type: application/json
+
+{
+    "name": "Sonny"
+}
+
+###
+GET {{baseurl}}/messages
+
+###
+POST {{baseurl}}/messages
+Content-Type: text/html
+
+Hello World
