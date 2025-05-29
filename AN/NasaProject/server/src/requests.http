@@ -1,0 +1,21 @@
+@baseUrl = http://localhost:8000
+
+###
+GET {{baseUrl}}/planets
+
+###
+GET {{baseUrl}}/launches
+
+###
+POST {{baseUrl}}/launches
+Content-Type: application/json
+
+{
+    "mission": "USS Enterprise",
+    "rocket": "NCC-1701-D",
+    "launchDate": "January 1, 2028",
+    "target": "Kepler-442 b"
+}
+
+###
+DELETE {{baseUrl}}/launches/105
