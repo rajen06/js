@@ -1,0 +1,10 @@
+@baseUrl = https://localhost:3000
+
+###
+GET {{baseUrl}}
+
+###
+GET {{baseUrl}}/secret
+
+# ###
+# GET {{baseUrl}}/auth/google
